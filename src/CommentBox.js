@@ -27,13 +27,12 @@ class CommentBox extends React.Component {
     //     })
     // }
     render(){
-        console.log('aa',store);
-        return(
+            return(
                 <div>
                     <div className='comment-box'>
                         <div>
                             {
-                                this.props.comment.map(
+                                this.props.comment.comments.map(
                                     item=> <div key={Math.random()} className='comment'>{item}</div>
                                 )
                             }
